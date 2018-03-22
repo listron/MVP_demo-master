@@ -11,6 +11,7 @@ import com.example.a20141022.myapplication.presenter.SencondPresenter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import xhxny.com.mylibrary.Uitils;
 
 /**
  * Created by zhangqiang on 2018/01/20.
@@ -35,6 +36,7 @@ public class MainActivity<V extends MainActivity, T extends MainPresenter<V>,M e
         ButterKnife.bind(this) ;
         mPresenter = createMainPresenter();
         mSencondPresenter = createSencondPresenter();
+        Uitils.getString();
     }
 
 
